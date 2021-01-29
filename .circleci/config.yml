@@ -14,3 +14,6 @@ jobs:
           steps:
             - run: npm install
       - run: npm start
+      - store_artifacts:
+         path: /tmp/artifact-1
+         destination: artifact-file
