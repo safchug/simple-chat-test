@@ -6,6 +6,8 @@ jobs:
     executor:
       name: node/default
       tag: '10.4'
+    environment:
+      PORT: 3000
     steps:
       - checkout
       - node/with-cache:
